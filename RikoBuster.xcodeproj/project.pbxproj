@@ -14,6 +14,7 @@
 		07908FBE1E6A893B00E1D5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07908FBD1E6A893B00E1D5C9 /* Main.storyboard */; };
 		07F452581E6A8E290077C552 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F452571E6A8E290077C552 /* SpriteKit.framework */; };
 		07F4525A1E6A8FFE0077C552 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F452591E6A8FFE0077C552 /* GameScene.swift */; };
+		07F4525C1E6A94C40077C552 /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4525B1E6A94C40077C552 /* GameSceneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		07908FBD1E6A893B00E1D5C9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		07F452571E6A8E290077C552 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		07F452591E6A8FFE0077C552 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		07F4525B1E6A94C40077C552 /* GameSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				07908FBB1E6A88BC00E1D5C9 /* WindowController.swift */,
 				07908FBD1E6A893B00E1D5C9 /* Main.storyboard */,
 				07F452591E6A8FFE0077C552 /* GameScene.swift */,
+				07F4525B1E6A94C40077C552 /* GameSceneView.swift */,
 			);
 			path = RikoBuster;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F4525A1E6A8FFE0077C552 /* GameScene.swift in Sources */,
+				07F4525C1E6A94C40077C552 /* GameSceneView.swift in Sources */,
 				07908FAF1E6A887300E1D5C9 /* AppDelegate.swift in Sources */,
 				07908FBC1E6A88BC00E1D5C9 /* WindowController.swift in Sources */,
 			);

@@ -2,15 +2,11 @@ import Foundation
 import Cocoa
 import SpriteKit
 
-class WindowController: NSWindowController {
+class WindowController: NSWindowController, NSGestureRecognizerDelegate {
     
     override func windowDidLoad() {
         super.windowDidLoad()
         
-    }
-    
-    var touchBarSize: CGSize {
-        return CGSize(width: 1085, height: 30)
     }
     
     override func makeTouchBar() -> NSTouchBar? {
@@ -24,6 +20,8 @@ class WindowController: NSWindowController {
         touchBar.defaultItemIdentifiers = [touchBarSceneIdentifier]
         touchBar.customizationAllowedItemIdentifiers = [touchBarSceneIdentifier]
         
+    
+        
         return touchBar
     }
 }
@@ -36,12 +34,7 @@ extension WindowController: NSTouchBarDelegate {
             let custom = NSCustomTouchBarItem(identifier: identifier)
             custom.customizationLabel = "Scene"
             
-            let skView = SKView(frame: NSRect(x: 0,
-                                              y: 0,
-                                              width: touchBarSize.width,
-                                              height: touchBarSize.height))
-            let scene = GameScene(size: skView.frame.size)
-            skView.presentScene(scene)
+            let skView = GameSceneView()
             custom.view = skView
             
             return custom
